@@ -1,6 +1,6 @@
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-# Jimmy's Personal Portfolio Website (ID Assignment 1)
+# Personal Portfolio Website
 A personal portfolio website to display my skills, projects and for users to learn more about me and act as a means of contacting me<br>
 The website was designed to be interactive and visually appealing to keep site visitors engaged and interested in the page.
 
@@ -8,7 +8,7 @@ Link To Website : https://jimmy-lew.github.io/ID-Assignment/<br>
 Video Walkthrough : [click here](videos/WebPage-Walkthrough.mp4) 
 
 ## Table of Contents
-- [Jimmy's Personal Portfolio Website (ID Assignment 1)](#jimmys-personal-portfolio-website-id-assignment-1)
+- [Personal Portfolio Website](#personal-portfolio-website)
   - [Table of Contents](#table-of-contents)
   - [Design Process](#design-process)
     - [User Stories:](#user-stories)

@@ -22,9 +22,9 @@ for (let button of mobileButtons) {
  * Icosahedron Var Declaration
  */
 const leftTrigger = document.getElementById("left-trigger"),
-    leftIcon = document.getElementById("icon-left"),
-    rightTrigger = document.getElementById("right-trigger"),
-    rightIcon = document.getElementById("icon-right");
+      rightIcon = document.getElementById("icon-right"),
+      leftIcon = document.getElementById("icon-left"),
+      rightTrigger = document.getElementById("right-trigger");
 
 /**
  * Check for hover
@@ -94,7 +94,7 @@ function submitFunction() {
         if (email.indexOf('@') > -1) {
             if (name !== '') {
                 if (message !== '') {
-                    alert(`${name} your message has been submitted`);
+                    alert(`Sorry ${name} this section is still under development`);
                     document.getElementById('email').value = "";
                     document.getElementById('name').value = "";
                     document.getElementById('message').value = "";
