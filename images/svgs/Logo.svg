@@ -1,0 +1,144 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270 270">
+  <defs>
+    <style>
+      .cls-1, .cls-17, .cls-2, .cls-3, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #2831b5;
+        stroke-width: 1.5px;
+      }
+
+      .cls-17, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        stroke-linecap: round;
+      }
+
+      .cls-7 {
+        fill: #29efe9;
+      }
+
+      .cls-8 {
+        fill: #ff3194;
+      }
+
+      .cls-9 {
+        fill: #ff306a;
+      }
+
+      .cls-10 {
+        fill: #e01e43;
+      }
+
+      .cls-11 {
+        fill: #ff9d00;
+      }
+
+      .cls-12 {
+        fill: #8f1aff;
+      }
+
+      .cls-13 {
+        fill: #fc0;
+      }
+
+      .cls-14 {
+        fill: #9e55f2;
+      }
+
+      .cls-15 {
+        clip-path: url(#clip-path-12);
+      }
+
+      .cls-16 {
+        font-size: 48px;
+        fill: #fff;
+        font-family: Nexa-Trial-Heavy, Nexa-Trial;
+        font-weight: 800;
+      }
+
+      .cls-17 {
+        stroke: #fff;
+        stroke-linecap: square;
+        stroke-width: 2.5px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <polyline class="cls-1" points="-345 -135 615 -135 615 405 -345 405"/>
+    </clipPath>
+    <clipPath id="clip-path-12">
+      <rect class="cls-3" x="-345" y="-135" width="960" height="540"/>
+    </clipPath>
+  </defs>
+  <g>
+    <circle cx="135" cy="135" r="135"/>
+    <g class="cls-4">
+      <line class="cls-5" x1="151.61" y1="126.57" x2="128.72" y2="131.85"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="125.5" y1="96.94" x2="153.05" y2="120.05"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="98.77" y1="120.42" x2="82.17" y2="137.02"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="118.29" y1="97.88" x2="104.15" y2="116.63"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="72.54" y1="107.15" x2="93.82" y2="117.08"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="101.39" y1="119.38" x2="120.63" y2="132.85"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="133.11" y1="70.47" x2="122.45" y2="91.39"/>
+    </g>
+    <line class="cls-5" x1="135.99" y1="68.07" x2="156.94" y2="83.86"/>
+    <line class="cls-6" x1="184.48" y1="102.91" x2="162.03" y2="88.41"/>
+    <g class="cls-4">
+      <line class="cls-6" x1="183.8" y1="102.14" x2="198.67" y2="123.37"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="198.78" y1="85.05" x2="183.69" y2="103.04"/>
+    </g>
+    <g class="cls-4">
+      <line class="cls-5" x1="159.12" y1="123.17" x2="158.49" y2="87.06"/>
+    </g>
+    <line class="cls-5" x1="92.49" y1="79.05" x2="118.47" y2="91.16"/>
+    <g class="cls-4">
+      <line class="cls-6" x1="157.03" y1="122.92" x2="175.36" y2="141.25"/>
+    </g>
+    <circle class="cls-7" cx="99.87" cy="119.37" r="9.33" transform="translate(-39.25 189.14) rotate(-76.72)"/>
+    <ellipse class="cls-8" cx="158.64" cy="123.99" rx="8.1" ry="8.07"/>
+    <circle class="cls-9" cx="176.25" cy="142.23" r="4.05" transform="translate(7.62 293.42) rotate(-80.78)"/>
+    <circle class="cls-10" cx="158.67" cy="85.65" r="6.09"/>
+    <circle class="cls-11" cx="200.04" cy="83.82" r="4.92" transform="translate(-10.84 33.13) rotate(-9.22)"/>
+    <ellipse class="cls-7" cx="121.77" cy="93.18" rx="6.09" ry="6.12"/>
+    <circle class="cls-12" cx="89.49" cy="77.73" r="6.09"/>
+    <circle class="cls-12" cx="122.46" cy="133.44" r="6.78"/>
+    <ellipse class="cls-13" cx="199.62" cy="123.99" rx="3.6" ry="3.57"/>
+    <circle class="cls-7" cx="134.73" cy="68.07" r="3.57"/>
+    <circle class="cls-7" cx="81.09" cy="138.15" r="3.57"/>
+    <circle class="cls-14" cx="68.1" cy="105.06" r="6.12"/>
+    <g class="cls-15">
+      <text class="cls-16" transform="translate(50.6 184.34)">Name</text>
+    </g>
+    <line class="cls-17" x1="195.06" y1="183.18" x2="213.17" y2="183.18"/>
+  </g>
+</svg>

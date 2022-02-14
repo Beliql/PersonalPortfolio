@@ -1,0 +1,995 @@
+/* Import fonts from folder */
+@font-face {
+    font-family: 'nexaregular';
+    src: url('../fonts/nexaregular-webfont.woff2') format('woff2'),
+        url('../fonts/nexaregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_bold-webfont.woff2') format('woff2'),
+        url('../fonts/nexa_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Default layout is mobile */
+
+/* General Formatting */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: fit-content;
+    margin: 0;
+    font-family: 'nexaregular';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    width: 100%
+}
+
+h1 {
+    font-family: "nexa_boldregular";
+}
+
+h2 {
+    font-family: "nexa_boldregular";
+}
+
+input {
+    color: #fff
+}
+
+textarea {
+    color: #fff;
+    resize: none;
+    height: 120px;
+}
+
+::placeholder {
+    color: #fff;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Items to not display in mobile */
+.social-logo,
+.main-intro-page .design,
+.navigation,
+.navigation.mobile,
+.leaves,
+.about-me::after,
+.contact>img {
+    display: none;
+}
+
+/* Animations */
+/* Raise Animation */
+.raise-on-hover {
+    transition: all 1.4s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+}
+
+.raise-on-hover:hover {
+    transform: translateY(-.4em);
+}
+
+/* Underline Animation */
+.underline-anim:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: .1em;
+    bottom: 0;
+    left: 0;
+    border-radius: .05em;
+    background: white;
+    transform-origin: bottom right;
+    transition: all 0.25s ease-out;
+}
+
+.underline-anim:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* -------------------------------------------------- Navigation Bar -------------------------------------------------- */
+.nav-container {
+    background: #111032;
+}
+
+.nav-container a {
+    color: white;
+}
+
+header .logo {
+    position: relative;
+    z-index: 990;
+    width: 5em;
+}
+
+.social-logo ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    float: right;
+}
+
+.social-logo ul img {
+    width: 32px;
+}
+
+.navigation {
+    position: relative;
+    z-index: 990;
+}
+
+.navigation li a {
+    display: block;
+    position: relative;
+    margin: 0 1em;
+    font-size: 1.2em;
+    font-family: "nexa_boldregular";
+}
+
+/* ------------------------- Social Logos Raise Anim Custom ------------------------- */
+.social-logo ul li a img.raise-on-hover:hover {
+    transform: translateY(-.7em);
+}
+
+/* ------------------ Hamburger Button to Activate Mobile Nav Menu ------------------ */
+.hamburger {
+    z-index: 999;
+    position: relative;
+    background: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+/* ------------------------- Mobile Navigation Menu Layout ------------------------- */
+.navigation.mobile {
+    z-index: 995;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    padding-top: 6.2em;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    transition: all 1.4s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+}
+
+.navigation.mobile li {
+    display: block;
+}
+
+.navigation.mobile li a {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+/* ----------------------------- Display Mobile Menu ------------------------------- */
+.navigation.mobile.show {
+    display: block;
+    background: #111;
+    left: 0;
+}
+
+/* --------------------------------------------------- Hero / Intro --------------------------------------------------- */
+.main-intro-page {
+    position: relative;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 4em;
+}
+
+.nav-contact {
+    margin: 0 auto;
+    margin-top: 2em;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.contact-button {
+    height: auto;
+    padding-bottom: 2em;
+}
+
+.nav-contact.raise-on-hover:hover {
+    transform: translateY(-1.2em);
+}
+
+.contact-text {
+    width: fit-content;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+/* ------------------------------- Leaves Decoration ------------------------------- */
+.content {
+    position: relative;
+}
+
+.leaves {
+    z-index: 985;
+    transition: all 1.4s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+}
+
+.leaves.orange {
+    top: -2.2em;
+    left: 15.5em;
+}
+
+.leaves.green-top.left {
+    top: 6em;
+    left: -7em;
+}
+
+.leaves.green-bottom.left {
+    top: 46em;
+    left: -3em;
+}
+
+.leaves.pink-bottom.left {
+    top: 52.5em;
+    left: -1.5em;
+}
+
+.leaves.pink-bottom.right {
+    right: 2em;
+    bottom: -3.4em;
+}
+
+.leaves.green-bottom.right {
+    right: 0;
+    bottom: -1em;
+}
+
+/* ------ Left-side leaves hover animation ------ */
+.leaves-container .left {
+    transform-origin: bottom left;
+}
+
+.leaves-container .left:hover img {
+    transform: rotateZ(15deg);
+}
+
+/* ----- Right-side leaves hover animation ----- */
+.content .right {
+    transform-origin: bottom right;
+}
+
+.content .right:hover img {
+    transform: rotateZ(-15deg);
+}
+
+/* -------- Orange leaf hover animation -------- */
+.leaves.orange {
+    transform-origin: top right;
+}
+
+.leaves.orange:hover {
+    transform: rotateZ(-15deg);
+}
+
+/* ----------------------------------------------------- About Me ----------------------------------------------------- */
+.about-me {
+    position: relative;
+}
+
+.about-me-text {
+    padding: 2em 0 6em 0;
+}
+
+/* ------------------------------------ Circles ------------------------------------ */
+.about-me::before {
+    content: "";
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    background: hsla(41, 100%, 55%, .85);
+    top: 1em;
+    left: 2.5em;
+    z-index: -1;
+}
+
+.about-me::after {
+    content: "";
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    background: hsla(354, 100%, 62%, .85);
+    top: 4em;
+    left: 14em;
+    z-index: -1;
+}
+
+/* -------------------------------- About Me Header -------------------------------- */
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2em;
+    font-size: .85em;
+}
+
+.featured-title {
+    color: black;
+    font-size: 2em;
+    font-family: "nexa_boldregular";
+    margin-top: -.4em;
+    display: block;
+}
+
+.featured-desc {
+    color: #252525;
+    margin-bottom: 3em;
+    font: .85em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+/* -------------------------------- About Me Cotent -------------------------------- */
+.about-me-content {
+    max-width: 800px;
+}
+
+.about-me-card {
+    margin-left: auto;
+    margin-right: auto;
+    background: #F7F7F7;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 2px 10px 30px hsla(0, 0%, 0%, .25);
+}
+
+.profile-circle {
+    /* float: left; */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: url(../images/pngs/Profile.png);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* ------------------------ 3D Hover Effect [2D for Mobile] ------------------------ */
+.td {
+    position: relative;
+    perspective: 1500px;
+}
+
+.td .about-me-card {
+    transform-style: preserve-3d;
+    transform: rotate(0);
+    transition: all .7s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+}
+
+.td:hover .about-me-card {
+    transform: rotateX(10deg);
+}
+
+/* ------------------------------------------------------ Skills ------------------------------------------------------ */
+.skills {
+    background: black;
+}
+
+.skill-icon {
+    width: 22.93px;
+    height: 22.93px;
+}
+
+.skills-container ul li {
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    max-width: 900px;
+    padding: 2em;
+    border-radius: 1em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+.skills-container ul li:first-child {
+    margin-top: 0;
+}
+
+/* ------------------------------ Skill Bar Formatting ------------------------------ */
+
+.bars {
+    margin-bottom: 15px;
+}
+
+.skills-bottom .bars .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-bottom span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.line {
+    height: 8px;
+    width: 100%;
+    border-radius: 4px;
+    background: lightgray;
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    border-radius: 4px;
+    left: 0;
+    right: 0;
+    background: #EA8120;
+}
+
+/* ----------------- Technical ----------------- */
+
+.line.html::before {
+    width: 75%;
+    background: #E44F28;
+}
+
+.line.css::before {
+    width: 70%;
+    background: #264DE4;
+}
+
+.line.sass::before {
+    width: 70%;
+    background: #D37AA6;
+}
+
+.line.javascript:before {
+    width: 60%;
+    background: #F7DF1E;
+}
+
+.line.angular::before {
+    width: 65%;
+    background: #C3002F;
+}
+
+.line.python::before {
+    width: 80%;
+    background: linear-gradient(90deg, #3974A3 50%, #FFDA4C 50%);
+}
+
+.line.csharp::before {
+    width: 75%;
+    background: #9A4993;
+}
+
+.line.sql::before {
+    width: 40%;
+    background: #0078D7;
+}
+
+.line.git::before {
+    width: 60%;
+    background: #F05133;
+}
+
+.line.bootstrap::before {
+    width: 60%;
+    background: #7712F7;
+}
+
+/* ------------------ Creative ------------------ */
+
+.line.adobeAI::before {
+    width: 60%;
+    background: #FF9A00;
+}
+
+.line.adobePS::before {
+    width: 65%;
+    background: #31A8FF;
+}
+
+.line.adobeXD::before {
+    width: 50%;
+    background: #FF61F6;
+}
+
+.line.adobeAE::before {
+    width: 60%;
+    background: #9999FF;
+}
+
+.line.anim::before {
+    width: 70%;
+    background: #5A5AE2;
+}
+
+.line.krita::before {
+    width: 80%;
+    background: #75FDF8;
+}
+
+.line.cd::before {
+    width: 90%;
+    background: #07E6DE;
+}
+
+.line.blender::before {
+    width: 60%;
+    background: #EA7600;
+}
+
+.line.tdm::before {
+    width: 75%;
+    background: #EA4200;
+}
+
+/* ---------------------------------------------------- Portfolio ---------------------------------------------------- */
+.portfolio {
+    background: linear-gradient(180deg, #FFFFFF, #F7F7F7);
+    ;
+}
+
+.portfolio-container i img,
+.portfolio-container i video {
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+/* --------------------------------------------------- Contact Form --------------------------------------------------- */
+.contact {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: black;
+    color: white;
+}
+
+.contact>h1 {
+    position: absolute;
+    top: 0;
+}
+
+.contact-form {
+    display: flex;
+    max-width: 700px;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contact>img {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 5em;
+}
+
+/* ---------------------------------- Form Inputs ---------------------------------- */
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.contact-form fieldset input,
+.contact-form fieldset textarea {
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4em;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: none;
+    border-top: none;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    border-radius: 0;
+    padding: 0 0 12px 12px
+}
+
+.contact-form fieldset input:focus,
+.contact-form fieldset textarea:focus {
+    outline: none;
+}
+
+/* --------------------------------- Submit Button --------------------------------- */
+.submit {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 36px;
+    margin: 0 auto 1em auto;
+    background: #FF00C8;
+    border-radius: 100px;
+}
+
+.submit.raise-on-hover:hover {
+    transform: translateY(-.7em);
+}
+
+/* -------------------------------------------------- Scroll Button -------------------------------------------------- */
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 0;
+    margin: 0 1em 1em 0;
+    width: 50px;
+    height: 50px;
+    transition: all 2s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+    border-radius: 50%;
+    box-shadow: 0 0 1.5px black;
+}
+
+.scroll-to-top-button.hide {
+    opacity: 0;
+    transform: rotateZ(90deg);
+    right: -5%;
+}
+
+.scroll-to-top-button.show {
+    opacity: 1;
+    transform: rotateZ(0deg);
+    right: 0;
+}
+
+/* ------------------------------------------------------ Footer ------------------------------------------------------ */
+div.bottom.social-logo {
+    padding: 2em 0em 2em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom.social-logo {
+    display: block;
+    background: #F7F7F7;
+}
+
+/* InBetween Layout - 500px */
+@media only screen and (min-width: 500px) {
+
+    /* Display Second Circle */
+    .about-me::after {
+        display: block;
+    }
+
+    /* Circle Text Wrap */
+    .profile-circle {
+        float: left;
+        margin: 30px 30px 30px 0;
+        shape-outside: circle();
+    }
+
+    .about-me-card>p {
+        text-align: left;
+    }
+
+    /* - */
+    .contact-text {
+        font-size: 2em;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 800px) {
+
+    .navigation {
+        display: flex;
+    }
+
+    /* Hide mobile Nav Menu */
+    .hamburger {
+        display: none;
+    }
+
+    .navigation.mobile.show {
+        display: none;
+    }
+
+    /* - */
+    .about-me,
+    .portfolio {
+        text-align: left;
+    }
+
+    .about-me,
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+        /* Set grid size */
+    }
+
+    .portfolio-left {
+        display: grid;
+        place-content: center;
+    }
+
+    /* Align about me text to center */
+    .left-side {
+        display: grid;
+        place-content: start left;
+    }
+
+    .about-me-text {
+        padding: 2em 0 0 6em;
+    }
+
+    /* 3D Rotation */
+    .td:hover .about-me-card {
+        transform: rotateX(10deg) rotateY(-18deg) rotateZ(3deg);
+    }
+
+    .right-side {
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    /* Make skills align to left */
+    .skills {
+        width: 75%;
+        border-radius: 0 2.4em 2.4em 0;
+        margin-top: -6em;
+        margin-right: -4em;
+        padding-top: 7em;
+        padding-bottom: 0em;
+    }
+
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 1em;
+    }
+
+    .skills-container ul li {
+        margin-bottom: -3em;
+        box-shadow: 2px 10px 30px hsla(0, 0%, 0%, .25);
+    }
+
+    /* - */
+    .portfolio {
+        padding-top: 12em;
+    }
+}
+
+/* Laptop Layout */
+@media only screen and (min-width: 992px) {
+
+    /* Only have a background color for area with logo and nav text */
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+    }
+
+    .nav-container header {
+        background: #111032;
+    }
+
+    header {
+        position: relative;
+        padding: 2em 2em 2em 4em;
+        border-radius: 2.4em;
+    }
+
+    /* Cover rounded corners */
+    header::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        border-radius: 2.4em 2.4em 0 0;
+    }
+
+    /* Display socials at top */
+    .social-logo {
+        padding: 2em 0em 2em 0em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Display leaves */
+    .leaves {
+        display: block;
+    }
+
+    /* Add padding to !portfolio & other sections */
+    section {
+        padding: 5em;
+    }
+
+    /* Push skills section down */
+    .skills {
+        margin-top: -7em;
+    }
+
+    /* Make only Intro / Header content area visible with black background */
+    .main-intro-page {
+        display: grid;
+        height: auto;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+    }
+
+    .main-intro-page .content {
+        background: black;
+        border-radius: 0 0 2.4em 2.4em;
+        height: 675px;
+        padding: 6em 8em 3.6em 4em;
+        text-align: left;
+    }
+
+    .main-intro-page .content h1 {
+        display: flex;
+        align-items: center;
+        font-size: 3em;
+        line-height: 1.2em;
+    }
+
+    /* Contact Button Resizing */
+    .nav-contact {
+        display: block;
+        margin: 0;
+        margin-top: 2em;
+    }
+
+    .contact-button {
+        width: auto;
+    }
+
+    .contact-text {
+        font-size: 2.25em;
+        left: 55%;
+    }
+
+    /* Align portofolio media to right */
+    .portfolio img,
+    .portfolio video {
+        float: right;
+        max-width: 500px;
+    }
+
+    /* Align contact to right */
+    .contact {
+        width: 70%;
+        border-radius: 2.4em 0 0 2.4em;
+        margin-top: -5em;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 5em 0 0 5em;
+    }
+
+    /* Display randomizing images */
+    .contact>img {
+        display: block;
+    }
+
+    /* Cover background */
+    .contact:after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        background: #F7F7F7;
+        width: 133%;
+        height: 100%;
+        margin-top: -5em;
+    }
+
+
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 1200px) {
+
+    /* 'Compress' content */
+    .main-intro-page .content {
+        display: grid;
+        grid-template-columns: 66% auto;
+    }
+
+    /* Display icosahedron */
+    .main-intro-page .design {
+        width: 318px;
+        font-size: 0;
+        /* Won't display next to each other without this */
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Icosahedron Animation */
+    img.design-left {
+        transform-origin: bottom right;
+        transition: all 1.4s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+        width: 159px;
+    }
+
+    img.design-right {
+        transform-origin: bottom left;
+        transition: all 1.4s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+        width: 159px;
+    }
+
+    #icon-left.is-hovered {
+        transition: all 0.7s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+        transform: rotateZ(-30deg);
+    }
+
+    #icon-right.is-hovered {
+        transition: all 0.7s cubic-bezier(0.2, 0.68, 0.5, 0.87);
+        transform: rotateZ(30deg);
+    }
+
+    /* Height Adjustments */
+    .nav-contact {
+        top: -8.5em;
+    }
+
+    .skills {
+        margin-top: -8.5em;
+    }
+}

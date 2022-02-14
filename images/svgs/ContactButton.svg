@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="346" height="197.5" viewBox="0 0 346 197.5">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #00b4ba;
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+
+      .cls-2 {
+        fill: #ffb617;
+      }
+
+      .cls-3 {
+        fill: #ff7817;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_18" data-name="Group 18" transform="translate(-196 -594)">
+    <g id="Vines">
+      <g id="Rectangle_24" data-name="Rectangle 24" class="cls-1" transform="translate(205 594)">
+        <rect class="cls-4" width="57" height="146" rx="28.5"/>
+        <rect class="cls-5" x="6" y="6" width="45" height="134" rx="22.5"/>
+      </g>
+      <line id="Line_4" data-name="Line 4" class="cls-1" y2="185" transform="translate(287.5 600.5)"/>
+    </g>
+    <g id="Contact_Button" data-name="Contact Button">
+      <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-2" width="346" height="97" rx="37" transform="translate(196 594)"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-3" cx="32" cy="32" r="32" transform="translate(210 611)"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-2" cx="32" cy="32" r="32" transform="translate(218 619)"/>
+    </g>
+  </g>
+</svg>
