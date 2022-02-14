@@ -4,8 +4,7 @@ Provide us insights about your design process, focusing on who this website is f
 A personal portfolio website to display my skills, projects and for users to learn more about me and act as a means of contacting me<br>
 The website was designed to be interactive and visually appealing to keep site visitors engaged and interested in the page.
 
-Link To Website : https://jimmy-lew.github.io/ID-Assignment/<br>
-Video Walkthrough : [click here](videos/WebPage-Walkthrough.mp4) 
+Link To Website : https://beliql.github.io/PersonalPortfolio/<br>
 
 ## Table of Contents
 - [Personal Portfolio Website](#personal-portfolio-website)
